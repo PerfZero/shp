@@ -14,7 +14,7 @@ const galleryThumbs = new Swiper(".gallery-thumbs", {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.2,
+        slidesPerView: 1.05,
       },
       768: {
         slidesPerView: 1,
