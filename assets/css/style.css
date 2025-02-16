@@ -466,8 +466,9 @@ body {
   color: #313131;
 }
 .add-on-prices {
-  margin-bottom: auto;
-  width: min-content;
+  display: flex;
+  flex-direction: column;
+  width: 54px;
 }
 
 .total-price-section {
