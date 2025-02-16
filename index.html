@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css " />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- Подключение CSS Fancybox -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+<!-- Подключение jQuery (если еще не подключен) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Подключение JS Fancybox -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="product-section">
+        <div class="product-section__left">
+          <!-- Swiper с главной фоткой и миниатюрами -->
+          <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="/assets/images/main.png" data-fancybox="gallery">
+                        <img src="/assets/images/main.png" alt="Main Product Image 1" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/assets/images/image_2.png" data-fancybox="gallery">
+                        <img src="/assets/images/image_2.png" alt="Main Product Image 2" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/assets/images/image_3.png" data-fancybox="gallery">
+                        <img src="/assets/images/image_3.png" alt="Main Product Image 3" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/assets/images/image_4.png" data-fancybox="gallery">
+                        <img src="/assets/images/image_4.png" alt="Main Product Image 4" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/assets/images/image_5.png" data-fancybox="gallery">
+                        <img src="/assets/images/image_5.png" alt="Main Product Image 5" />
+                    </a>
+                </div>
+                <!-- Добавьте больше слайдов по необходимости -->
+            </div>
+            <!-- Навигационные стрелки -->
+        </div>
+          <!-- Миниатюры -->
+          <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/assets/images/main.png" alt="Thumbnail 1" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/image_2.png" alt="Main Product Image 2" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/image_3.png" alt="Main Product Image 3" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/image_4.png" alt="Main Product Image 4" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/image_5.png" alt="Main Product Image 5" />
+                </div>
+                <!-- Добавьте больше миниатюр по необходимости -->
+            </div>
+        </div>
+
+          
+
+          <!-- Аккордеоны -->
+          <div class="accordion">
+            <div class="accordion__item">
+              <button class="accordion__header">
+                What's included
+                <svg class="accordion__icon" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.825 0.658313L5 4.47498L1.175 0.658314L-4.37114e-07 1.83331L5 6.83331L10 1.83331L8.825 0.658313Z" fill="black" />
+                </svg>
+              </button>
+              <div class="accordion__content">
+                <div class="included-items">
+                  <!-- Товар 1 -->
+                  <div class="included-item">
+                    <img src="/assets/images/what_1.png" alt="48V HUSKY 2 LiFePO4" class="included-item__image" />
+                    <div class="included-item__details">
+                      <h4 class="included-item__title">1× 48V HUSKY 2</h4>
+                      <p class="included-item__description">LiFePO4 100Ah - 5.12kWh</p>
+                    </div>
+                  </div>
+
+                  <!-- Товар 2 -->
+                  <div class="included-item">
+                    <img src="/assets/images/what_2.png" alt="48V HUSKY 2 COMM SOC Meter" class="included-item__image" />
+                    <div class="included-item__details">
+                      <h4 class="included-item__title">1× 48V HUSKY 2 COMM SOC Meter</h4>
+                    </div>
+                  </div>
+
+                  <!-- Товар 3 -->
+                  <div class="included-item">
+                    <img src="/assets/images/what_3.png" alt="48V 110V AC 20A IP65 Blue Charger" class="included-item__image" />
+                    <div class="included-item__details">
+                      <h4 class="included-item__title">1× 48V 110V AC 20A IP65 Blue Charger</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                Details
+                <svg class="accordion__icon" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.825 0.658313L5 4.47498L1.175 0.658314L-4.37114e-07 1.83331L5 6.83331L10 1.83331L8.825 0.658313Z" fill="black" />
+                </svg>
+              </button>
+              <div class="accordion__content">
+                <p>Detailed description of the product.</p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                Specification & Manual Sheets
+                <svg class="accordion__icon" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.825 0.658313L5 4.47498L1.175 0.658314L-4.37114e-07 1.83331L5 6.83331L10 1.83331L8.825 0.658313Z" fill="black" />
+                </svg>
+              </button>
+              <div class="accordion__content">
+                <p>Technical specifications and manual sheets.</p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                Certifications
+                <svg class="accordion__icon" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.825 0.658313L5 4.47498L1.175 0.658314L-4.37114e-07 1.83331L5 6.83331L10 1.83331L8.825 0.658313Z" fill="black" />
+                </svg>
+              </button>
+              <div class="accordion__content">
+                <p>Information about product certifications.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-section__right">
+          <!-- Рейтинг и кнопка отзыва -->
+          <div class="product-rating">
+            <div class="stars">
+              <span
+                ><svg width="14" class="star" data-index="1" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                    stroke="#FFC025"
+                  />
+                </svg>
+                <svg width="14" class="star" data-index="2" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                    stroke="#FFC025"
+                  />
+                </svg>
+                <svg width="14" class="star" data-index="3" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                    stroke="#FFC025"
+                  />
+                </svg>
+                <svg width="14" class="star" data-index="4" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                    stroke="#FFC025"
+                  />
+                </svg>
+                <svg width="14" class="star" data-index="5" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                    stroke="#FFC025"
+                  />
+                </svg>
+              </span>
+              <!-- 5 звезд -->
+            </div>
+            <p class="review-text">Be the first to <a href="#" class="review-link">leave a review</a></p>
+          </div>
+
+          <!-- Название товара -->
+          <h1 class="product-title">48V HUSKY 2 KIT</h1>
+
+          <!-- Цены -->
+          <div class="product-prices">
+            <p class="product-price">$2,100</p>
+            <p class="product-price-old">$2,315</p>
+            <p class="product-discount">SAVE 9%</p>
+          </div>
+
+          <!-- Список характеристик -->
+          <ul class="product-features">
+            <li>IP65 Protection Rating</li>
+            <li>Automatic Self-Heating</li>
+            <li>Parallel Communications</li>
+            <li>Simple Installation</li>
+          </ul>
+
+          <!-- Совместимость -->
+          <div class="product-compatibility">
+            <h3>THIS BATTERY IS COMPATIBLE WITH:</h3>
+            <ul class="compatibility-list">
+              <li><img src="/assets/icons/icon_1.svg" alt="Golf Carts" /> Golf Carts</li>
+              <li><img src="/assets/icons/icon_1.svg" alt="Utility Carts" /> Utility Carts</li>
+              <li><img src="/assets/icons/icon_2.svg" alt="RVs" /> RVs</li>
+              <li><img src="/assets/icons/icon_3.svg" alt="Camper Vans" /> Camper Vans</li>
+            </ul>
+          </div>
+
+          <!-- Кнопка "Add to Cart" и гарантия -->
+          <button class="add-to-cart">Add to Cart</button>
+          <p class="warranty-shipping">12-Year Warranty • Fast U.S Shipping</p>
+
+          <!-- Add-ons Section -->
+          <div class="add-ons-section">
+            <h3>Add-ons you might need:</h3>
+
+            <!-- Checkbox for Parallel Comm Cable -->
+            <div class="add-on-list">
+              <div class="add-on-item">
+                <label class="checkbox-container">
+                  <input type="checkbox" class="add-on-checkbox" />
+                  <span class="checkmark"></span>
+                  <img src="/assets/images/image_add_1.png" alt="Parallel Comm Cable" class="add-on-image" />
+                  <div class="add-on-details">
+                    <div class="add-on-rating">
+                      <span class="stars">
+                        <!-- Star icons for rating -->
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                            stroke="#FFC025"
+                          />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                            stroke="#FFC025"
+                          />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                            stroke="#FFC025"
+                          />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                            stroke="#FFC025"
+                          />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                            stroke="#FFC025"
+                          />
+                        </svg>
+                        <!-- Repeat for 5 stars -->
+                      </span>
+                      <span class="review-count">(370)</span>
+                    </div>
+                    <p class="add-on-name">Parallel Comm Cable</p>
+                  </div>
+                  <div class="add-on-prices">
+                    <span class="add-on-price-default">+$5</span>
+                  </div>
+                </label>
+              </div>
+              <div class="add-on-item">
+                <label class="checkbox-container">
+                  <input type="checkbox" class="add-on-checkbox" />
+                  <span class="checkmark"></span>
+                  <img src="/assets/images/image_add_2.png" alt="Parallel Comm Cable" class="add-on-image" />
+                  <div class="add-on-details">
+                    <div class="add-on-rating">
+                      <span class="stars">
+                        <!-- Star icons for rating -->
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                            stroke="#FFC025"
+                          />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                            stroke="#FFC025"
+                          />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                            stroke="#FFC025"
+                          />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                            stroke="#FFC025"
+                          />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                            stroke="#FFC025"
+                          />
+                        </svg>
+                        <!-- Repeat for 5 stars -->
+                      </span>
+                      <span class="review-count">(370)</span>
+                    </div>
+                    <p class="add-on-name">Parallel Comm Cable</p>
+                  </div>
+                  <div class="add-on-prices">
+                    <span class="add-on-price-discount">+$32</span>
+                    <span class="add-on-price-original">+$35</span>
+                  </div>
+                </label>
+              </div>
+              <div class="add-on-item">
+                <label class="checkbox-container">
+                  <input type="checkbox" class="add-on-checkbox" />
+                  <span class="checkmark"></span>
+                  <img src="/assets/images/image_add_3.png" alt="Parallel Comm Cable" class="add-on-image" />
+                  <div class="add-on-details">
+                    <div class="add-on-rating">
+                      <span class="stars">
+                        <!-- Star icons for rating -->
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                            stroke="#FFC025"
+                          />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                            stroke="#FFC025"
+                          />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                            stroke="#FFC025"
+                          />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                            stroke="#FFC025"
+                          />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.26813 10.8296L7 10.6592L6.73187 10.8296L3.42193 12.9324L4.30673 8.92787L4.36913 8.64542L4.15538 8.45052L1.17571 5.73376L5.0782 5.37953L5.38255 5.35191L5.49677 5.06845L7 1.33782L8.50323 5.06845L8.61745 5.35191L8.9218 5.37953L12.8243 5.73376L9.84462 8.45052L9.63087 8.64542L9.69327 8.92787L10.5781 12.9324L7.26813 10.8296Z"
+                            stroke="#FFC025"
+                          />
+                        </svg>
+                        <!-- Repeat for 5 stars -->
+                      </span>
+                      <span class="review-count">(370)</span>
+                    </div>
+                    <p class="add-on-name">Parallel Comm Cable</p>
+                  </div>
+                  <div class="add-on-prices">
+                    <span class="add-on-price-discount">+$32</span>
+                    <span class="add-on-price-original">+$35</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Repeat for other add-ons if needed -->
+
+            <!-- Total Price Section -->
+            <div class="total-price-section">
+              <p class="total-price-label">Total Price: $82</p>
+              <p class="total-price-old">$90</p>
+              <p class="total-price-save">SAVE 9%</p>
+            </div>
+
+            <!-- Add to Cart Button -->
+            <button class="add-to-cart">Add 3 items to cart</button>
+            <p class="warranty-shipping">12-Year Warranty • Fast U.S Shipping</p>
+          </div>
+          <div class="accordion accordion_bottom">
+            <div class="accordion__item">
+              <button class="accordion__header">
+                What's included
+                <svg class="accordion__icon" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.825 0.658313L5 4.47498L1.175 0.658314L-4.37114e-07 1.83331L5 6.83331L10 1.83331L8.825 0.658313Z" fill="black" />
+                </svg>
+              </button>
+              <div class="accordion__content">
+                <div class="included-items">
+                  <!-- Товар 1 -->
+                  <div class="included-item">
+                    <img src="/assets/images/what_1.png" alt="48V HUSKY 2 LiFePO4" class="included-item__image" />
+                    <div class="included-item__details">
+                      <h4 class="included-item__title">1× 48V HUSKY 2</h4>
+                      <p class="included-item__description">LiFePO4 100Ah - 5.12kWh</p>
+                    </div>
+                  </div>
+
+                  <!-- Товар 2 -->
+                  <div class="included-item">
+                    <img src="/assets/images/what_2.png" alt="48V HUSKY 2 COMM SOC Meter" class="included-item__image" />
+                    <div class="included-item__details">
+                      <h4 class="included-item__title">1× 48V HUSKY 2 COMM SOC Meter</h4>
+                    </div>
+                  </div>
+
+                  <!-- Товар 3 -->
+                  <div class="included-item">
+                    <img src="/assets/images/what_3.png" alt="48V 110V AC 20A IP65 Blue Charger" class="included-item__image" />
+                    <div class="included-item__details">
+                      <h4 class="included-item__title">1× 48V 110V AC 20A IP65 Blue Charger</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                Details
+                <svg class="accordion__icon" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.825 0.658313L5 4.47498L1.175 0.658314L-4.37114e-07 1.83331L5 6.83331L10 1.83331L8.825 0.658313Z" fill="black" />
+                </svg>
+              </button>
+              <div class="accordion__content">
+                <p>Detailed description of the product.</p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                Specification & Manual Sheets
+                <svg class="accordion__icon" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.825 0.658313L5 4.47498L1.175 0.658314L-4.37114e-07 1.83331L5 6.83331L10 1.83331L8.825 0.658313Z" fill="black" />
+                </svg>
+              </button>
+              <div class="accordion__content">
+                <p>Technical specifications and manual sheets.</p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                Certifications
+                <svg class="accordion__icon" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.825 0.658313L5 4.47498L1.175 0.658314L-4.37114e-07 1.83331L5 6.83331L10 1.83331L8.825 0.658313Z" fill="black" />
+                </svg>
+              </button>
+              <div class="accordion__content">
+                <p>Information about product certifications.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- New Section: Versatile Compatibility -->
+      <section class="compatibility-section">
+        <h2>
+          Versatile Compatibility for <br />
+          Every 48V Setup
+        </h2>
+
+        <!-- Swiper Slider -->
+        <div class="swiper compatibility-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="/assets/images/slider_image_1.png" alt="Golf Carts" />
+                <p>Golf Carts</p>
+              </a>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="/assets/images/slider_image_2.png" alt="Golf Carts" />
+                <p>Utility Carts</p>
+              </a>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="/assets/images/slider_image_3.png" alt="Golf Carts" />
+                <p>RVs</p>
+              </a>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="/assets/images/slider_image_4.png" alt="Golf Carts" />
+                <p>Camper Vans</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="/assets/images/slider_image_5.png" alt="Golf Carts" />
+                <p>Camper Vans</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="/assets/images/slider_image_6.png" alt="Golf Carts" />
+                <p>Camper Vans</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination custom-pagination"></div>
+
+        </div>
+      </section>
+      <!-- Section: Explore the HUSKY 2’s Powerful Features -->
+      <section class="features-section">
+        <h2>Explore the HUSKY 2’s Powerful Features</h2>
+
+        <div class="features-content">
+          <!-- Left Side: Image and Weight -->
+          <div class="features-left">
+            <img src="/assets/images/battery.png" alt="HUSKY 2" class="features-image" />
+          </div>
+
+          <!-- Right Side: Accordion -->
+          <div class="features-right">
+            <div class="accordion">
+              <!-- Accordion Item 1: Battery Basics -->
+              <div class="accordion-item">
+                <button class="accordion-button">Battery Basics</button>
+                <div class="accordion-content">
+                  <p>Details about the battery technology, capacity, and lifespan.</p>
+                </div>
+              </div>
+
+              <!-- Accordion Item 2: Performance -->
+              <div class="accordion-item">
+                <button class="accordion-button">Performance</button>
+                <div class="accordion-content">
+                  <p>Information about power output, efficiency, and performance metrics.</p>
+                </div>
+              </div>
+
+              <!-- Accordion Item 3: Safety Features -->
+              <div class="accordion-item">
+                <button class="accordion-button">Safety Features</button>
+                <div class="accordion-content">
+                  <p>Details on built-in safety mechanisms like overcharge protection and thermal management.</p>
+                </div>
+              </div>
+
+              <!-- Accordion Item 4: Temperature Tolerance -->
+              <div class="accordion-item">
+                <button class="accordion-button">Temperature Tolerance</button>
+                <div class="accordion-content">
+                  <p>Information about operating temperature range and durability in extreme conditions.</p>
+                </div>
+              </div>
+
+              <!-- Accordion Item 5: Connectivity -->
+              <div class="accordion-item">
+                <button class="accordion-button">Connectivity</button>
+                <div class="accordion-content">
+                  <p>Details on communication protocols, compatibility, and integration options.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Trusted by Millions -->
+    </div>
+    <section class="testimonials-section">
+      <div class="testimonials-contaier">
+        <div class="testimonials-header">
+          <div class="stars">
+            <!-- 5 звезд -->
+            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 18.4847L19.107 23L17.2267 14.49L23.5 8.77026L15.2315 8.01974L12 0L8.7685 8.01974L0.5 8.77026L6.77325 14.49L4.893 23L12 18.4847Z" fill="#008001" />
+            </svg>
+            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 18.4847L19.107 23L17.2267 14.49L23.5 8.77026L15.2315 8.01974L12 0L8.7685 8.01974L0.5 8.77026L6.77325 14.49L4.893 23L12 18.4847Z" fill="#008001" />
+            </svg>
+            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 18.4847L19.107 23L17.2267 14.49L23.5 8.77026L15.2315 8.01974L12 0L8.7685 8.01974L0.5 8.77026L6.77325 14.49L4.893 23L12 18.4847Z" fill="#008001" />
+            </svg>
+            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 18.4847L19.107 23L17.2267 14.49L23.5 8.77026L15.2315 8.01974L12 0L8.7685 8.01974L0.5 8.77026L6.77325 14.49L4.893 23L12 18.4847Z" fill="#008001" />
+            </svg>
+            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 18.4847L19.107 23L17.2267 14.49L23.5 8.77026L15.2315 8.01974L12 0L8.7685 8.01974L0.5 8.77026L6.77325 14.49L4.893 23L12 18.4847Z" fill="#008001" />
+            </svg>
+
+            <!-- Повторить 5 раз -->
+          </div>
+          <h2>Trusted by millions of customers nationwide</h2>
+        </div>
+
+        <!-- Swiper Slider -->
+      </div>
+      <div class="swiper_wrap">
+        <div class="swiper testimonials-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-star">
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+                </div>
+                <p class="testimonial-text">
+                  "This system completely transformed my home’s energy efficiency. It’s compact, quiet, and keeps everything running smoothly, even during outages. I couldn’t be happier with my
+                  purchase!"
+                </p>
+                <div class="block-autorh">
+                  <p class="testimonial-author">David T.</p>
+                  <p class="testimonial-verified"><img src="/assets/icons/verif.svg" alt="" />Verified Customer</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-star">
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+                </div>
+                <p class="testimonial-text">
+                  "This system completely transformed my home’s energy efficiency. It’s compact, quiet, and keeps everything running smoothly, even during outages. I couldn’t be happier with my
+                  purchase!"
+                </p>
+                <div class="block-autorh">
+                  <p class="testimonial-author">David T.</p>
+                  <p class="testimonial-verified"><img src="/assets/icons/verif.svg" alt="" />Verified Customer</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-star">
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+                </div>
+                <p class="testimonial-text">
+                  "This system completely transformed my home’s energy efficiency. It’s compact, quiet, and keeps everything running smoothly, even during outages. I couldn’t be happier with my
+                  purchase!"
+                </p>
+                <div class="block-autorh">
+                  <p class="testimonial-author">David T.</p>
+                  <p class="testimonial-verified"><img src="/assets/icons/verif.svg" alt="" />Verified Customer</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-star">
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+                </div>
+                <p class="testimonial-text">
+                  "This system completely transformed my home’s energy efficiency. It’s compact, quiet, and keeps everything running smoothly, even during outages. I couldn’t be happier with my
+                  purchase!"
+                </p>
+                <div class="block-autorh">
+                  <p class="testimonial-author">David T.</p>
+                  <p class="testimonial-verified"><img src="/assets/icons/verif.svg" alt="" />Verified Customer</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-star">
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+
+                  <img src="/assets/icons/fill-star.svg" alt="" />
+                </div>
+                <p class="testimonial-text">
+                  "This system completely transformed my home’s energy efficiency. It’s compact, quiet, and keeps everything running smoothly, even during outages. I couldn’t be happier with my
+                  purchase!"
+                </p>
+                <div class="block-autorh">
+                  <p class="testimonial-author">David T.</p>
+                  <p class="testimonial-verified"><img src="/assets/icons/verif.svg" alt="" />Verified Customer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination custom-paginations"></div>
+
+          <!-- Add Navigation Buttons -->
+        </div>
+        <div class="swiper-button-next"><img src="/assets/icons/arrow.svg" alt="" /></div>
+        <div class="swiper-button-prev"><img src="/assets/icons/arrow.svg" alt="" /></div>
+      </div>
+    </section>
+    <!-- Section: You May Also Like -->
+    <section class="related-products-section">
+      <div class="container">
+        <h2>You may also like</h2>
+
+        <div class="related-products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <img src="/assets/images/also_image_1.png" alt="36V Raptor 2 Kit" class="product-image" />
+            <div class="also-rating">
+              <div class="also-stars">
+                <img src="/assets/icons/fill-star.svg" alt="" />
+                <img src="/assets/icons/fill-star.svg" alt="" />
+                <img src="/assets/icons/fill-star.svg" alt="" />
+                <img src="/assets/icons/fill-star.svg" alt="" />
+                <img src="/assets/icons/fill-star.svg" alt="" />
+              </div>
+              <span class="also-review-count">(5,902)</span>
+            </div>
+            <h3 class="product-title__also">36V Raptor 2 Kit</h3>
+            <p class="product-description">LiFePO4 - 100Ah - 3.84kWh</p>
+            <div class="product-prices__also">
+              <span class="product-price__also">$1,650</span>
+              <span class="product-price-old__also">$1,815</span>
+              <span class="product-discount__also">9% off</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="/assets/images/also_image_2.png" alt="36V Raptor 2 Kit" class="product-image" />
+            <div class="also-rating">
+              <div class="also-stars">
+                <img src="/assets/icons/fill-star.svg" alt="" />
+                <img src="/assets/icons/fill-star.svg" alt="" />
+                <img src="/assets/icons/fill-star.svg" alt="" />
+                <img src="/assets/icons/fill-star.svg" alt="" />
+                <img src="/assets/icons/fill-star.svg" alt="" />
+              </div>
+              <span class="also-review-count">(5,902)</span>
+            </div>
+            <h3 class="product-title__also">48v 2x eagle 2 kit</h3>
+            <p class="product-description">LiFePO4 - 64Ah - 3.26kWh</p>
+            <div class="product-prices__also">
+              <span class="product-price__also">$1,750</span>
+              <span class="product-price-old__also">$1,815</span>
+              <span class="product-discount__also">9% off</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="/assets/images/also_image_3.png" alt="36V Raptor 2 Kit" class="product-image" />
+            <div class="also-rating">
+              <div class="also-stars">
+                <img src="/assets/icons/fill-star.svg" alt="" />
+                <img src="/assets/icons/fill-star.svg" alt="" />
+                <img src="/assets/icons/fill-star.svg" alt="" />
+                <img src="/assets/icons/fill-star.svg" alt="" />
+                <img src="/assets/icons/fill-star.svg" alt="" />
+              </div>
+              <span class="also-review-count">(5,902)</span>
+            </div>
+            <h3 class="product-title__also">48v 2x husky 2 kit</h3>
+            <p class="product-description">LiFePO4 - 200Ah - 10.24kWh</p>
+            <div class="product-prices__also">
+              <span class="product-price__also">$4,000</span>
+              <span class="product-price-old__also">$4,345</span>
+              <span class="product-discount__also">9% off</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="/assets/images/also_image_4.png" alt="36V Raptor 2 Kit" class="product-image" />
+            <div class="also-rating">
+              <div class="also-stars">
+                <img src="/assets/icons/fill-star.svg" alt="" />
+                <img src="/assets/icons/fill-star.svg" alt="" />
+                <img src="/assets/icons/fill-star.svg" alt="" />
+                <img src="/assets/icons/fill-star.svg" alt="" />
+                <img src="/assets/icons/fill-star.svg" alt="" />
+              </div>
+              <span class="also-review-count">(5,902)</span>
+            </div>
+            <h3 class="product-title__also">72v raptor 2 kit</h3>
+            <p class="product-description">LiFePO4 - 100Ah - 7.68kWh</p>
+            <div class="product-prices__also">
+              <span class="product-price__also">$2,750</span>
+              <span class="product-price-old__also">$3,315 </span>
+              <span class="product-discount__also">9% off</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
